@@ -1,0 +1,26 @@
+<Alloy>
+	<Collection src="customer">
+	<Window backgroundColor="white">	
+		<View id="needs">
+			<View id="topRowView" dataCollection="customers" dataFilter="topRowFilter" dataTransform="transformTopRowData"> 
+				<ImageView class="topSubView" width="{widths}">
+					<View class="paddedView">
+						<!-- <Label customer_id="{id}" class="businessNeedLabel" text="{name}" onClick="goToPage"/> -->
+							<Label customer_id="{id}" class="businessNeedLabel" text="{name}" onClick="goToPage"/>
+					</View>
+				</ImageView>
+			</View>
+			
+			<ImageView id="omni">
+			<Label id="needName">NeedName</Label></ImageView>	
+			
+			<View id="bottomRowView" dataCollection="customers" dataFilter="bottomRowFilter" dataTransform="transformBottomRowData">
+				<ImageView id="{id}" class="bottomSubView" width="{widths}">
+					<View class="paddedView">
+						<Label customer_id="{id}" class="businessNeedLabel" text="{name}" onClick="goToPage"/>		
+					</View>
+				</ImageView>
+			</View>
+		</View>	
+	</Window>
+</Alloy>

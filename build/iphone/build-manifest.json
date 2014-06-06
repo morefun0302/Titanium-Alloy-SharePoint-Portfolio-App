@@ -1,0 +1,23 @@
+{
+	"target": "simulator",
+	"deployType": "development",
+	"deviceFamily": "universal",
+	"iosSdkPath": "/Users/zachzoeller/Library/Application Support/Titanium/mobilesdk/osx/3.2.0.GA/iphone",
+	"tiCoreHash": "77157e1ffaec640cf559356a147b6a4c",
+	"modulesHash": "d41d8cd98f00b204e9800998ecf8427e",
+	"modulesNativeHash": "d41d8cd98f00b204e9800998ecf8427e",
+	"gitHash": "d9182d6",
+	"name": "OmniMobileSalesApp",
+	"id": "com.omniresources.portfolio",
+	"analytics": true,
+	"publisher": "omni",
+	"url": "http://omniresources.com",
+	"version": "1.0",
+	"description": "not specified",
+	"copyright": "2013 by omni",
+	"guid": "1ddc7a38-3f7a-4c90-8431-362e3d824068",
+	"skipJSMinification": true,
+	"forceCopy": false,
+	"forceCopyAll": false,
+	"encryptJS": false
+}

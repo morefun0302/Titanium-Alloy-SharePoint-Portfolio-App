@@ -1,0 +1,43 @@
+<Alloy>
+	<Collection src="businessNeed">
+	<Window class="indexWindow">			
+		<View id="needs">
+			<View id="topRowView" dataCollection="businessNeeds" dataFilter="topRowFilter" dataTransform="transformTopRowData">
+				<ImageView class="topSubView" width="{widths}">					
+					<View class="paddedView">
+						<Label need_id="{id}" class="businessNeedLabel" text="{title}" onClick="goToPage"/>	
+					</View>
+				</ImageView>
+			</View>
+			
+			<ImageView id="omni">
+			</ImageView>	
+			
+			<View id="bottomRowView" dataCollection="businessNeeds" dataFilter="bottomRowFilter" dataTransform="transformBottomRowData">
+				<ImageView id="{id}" class="bottomSubView" width="{widths}">
+					<View class="paddedView">
+						<Label need_id="{id}" class="businessNeedLabel" text="{title}" onClick="goToPage"/>		
+					</View>
+				</ImageView>
+			</View>
+		</View>
+		<View id="showSyncButtonView"  zIndex="400" bottom="0" right="0" width="60" height="60" onClick="toggleSyncView" backgroundColor="black">
+		</View>
+		<View id="loginView" visible="false">
+			<Toolbar id="syncToolbar">
+				<Items>
+					<Button id="cancelSyncButton" onClick="toggleSyncView" />
+					<FlexSpace />	
+					<Label text="SharePoint Sync" color="Black" />
+					<FlexSpace/>
+					<Button id="syncButton" onClick="onSyncButtonClicked"/>
+				</Items>
+			</Toolbar>
+			<TextField id="username"></TextField>
+			<TextField id="password"></TextField>			
+			<Label id="lastSyncText" />
+			<Label class="spacer" text="     " />
+		</View>
+		
+	</Window>
+</Alloy>

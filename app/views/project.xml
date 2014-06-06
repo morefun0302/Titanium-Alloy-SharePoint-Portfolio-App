@@ -1,0 +1,25 @@
+<Alloy>
+	<Collection src="mobileContent">
+	<Window backgroundColor="white">	
+		<View id="needs">
+			<View id="topRowView" dataCollection="mobileContents" dataFilter="mobileContentFilter" dataTransform="transformTopRowData">
+				<ImageView class="topSubView" width="{widths}">
+					<View class="paddedView">
+						<Label project_id="{id}" class="businessNeedLabel" text="{name}" onClick="goToPage"/>	
+					</View>
+				</ImageView>
+			</View>
+			
+			<ImageView id="omni">
+			</ImageView>	
+			
+			<View id="bottomRowView" dataCollection="mobileContents" dataFilter="bottomRowFilter" dataTransform="transformBottomRowData">
+				<ImageView id="{id}" class="bottomSubView" width="{widths}">
+					<View class="paddedView">
+						<Label project_id="{id}" class="businessNeedLabel" text="{name}" onClick="goToPage"/>		
+					</View>
+				</ImageView>
+			</View>
+		</View>	
+	</Window>
+</Alloy>

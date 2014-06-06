@@ -1,0 +1,5 @@
+<Alloy>
+	<View id="container" borderColor="black">
+		<Label id="title" text="[{title}]"/>
+	</View>
+</Alloy>

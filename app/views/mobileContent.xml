@@ -1,0 +1,39 @@
+<Alloy>
+	<Collection src="attachment">
+	<Window backgroundColor="black">
+		<View id="wrapperView" >
+			<View class="headerView" onSwipe="swipeHeader">
+				<ImageView class="omni"></ImageView>
+				<Label id="projectName" class="needLabel"></Label>
+				<ImageView id="customerLogo" class="projectImage"></ImageView>
+			</View>
+			<View class="bodyView" >
+				<View class="topicView" top="0%">
+					<Label class="topicLabel">Problem</Label>					
+					<View class="subtopicView">
+						<Label id="problemStatement" class="subtopicLabel"></Label>
+					</View>				
+				</View>
+				<View class="topicView" top="33%">
+					<Label class="topicLabel">Solution</Label>
+					<View class="subtopicView">
+						<Label id="solutionStatement" class="subtopicLabel"></Label>
+					</View>				
+				</View>
+				<View class="topicView" top="66%">
+					<Label class="topicLabel">Value</Label>
+					<View class="subtopicView">
+						<Label id="valueStatement" class="subtopicLabel" ></Label>
+					</View>				
+				</View>
+				<ScrollableView id="slideParent" class="slidesView" dataFilter="filterAttachmentData" dataCollection="attachments" dataTransform="transformAttachmentData">					
+					<View class="slide">
+						<!-- <VideoPlayer url="{videoUrl}" class="video" visible="{videoVisible}"></VideoPlayer> -->
+						<WebView data="{file}" class="media" ></WebView>
+					</View>
+				</ScrollableView>
+			</View>
+		</View>				
+	</Window>
+</Alloy>
+		

@@ -1,0 +1,141 @@
+".headerView": {
+	width:'100%',
+	height:"150",
+	top:0
+},
+".headerView[platform=ios formFactor=handheld]": {
+	width:'100%',
+	height:"75",
+	top:0
+},
+"#wrapperView": {
+	backgroundColor:"black",
+	layout: "vertical",
+	zIndex: "-100"
+},
+".omni": {
+	image: '/omni_logos/OMNI-white-blue.png',
+	width: '300',
+	height: '100',
+	top: '25',
+	left: '25'
+},
+".omni[platform=ios formFactor=handheld]": {
+	image: '/omni_logos/OMNI-white-blue.png',
+	width: 100,
+	height: 33,
+	top: '25',
+	left: '25'
+},
+".needLabel":{
+	top: '65',
+	left: '340',
+	font: { fontSize: 30},
+	color: 'white'
+},
+".needLabel[platform=ios formFactor=handheld]": {
+	top: '30',
+	left: '125',
+	font: { fontSize: 15},
+	color: 'white'
+},
+".projectImage": {
+	image: '/omni_logos/OMNI-white-blue.png',
+	height: '33',
+	width: '100',
+	top: '25',
+	right: '25'
+},
+".bodyView": {
+	width: '100%',
+	color: 'white'	
+},
+".topicView": {
+	width: '25%',
+	height: '30%',
+	layout: 'vertical',
+	bottom: 0,
+	left: 0,
+	color:'white'
+},
+".topicView[platform=ios formFactor=handheld]": {
+	width: '25%',
+	height: '30%',
+	layout: 'vertical',
+	bottom: 0,
+	left: 0,
+	color:'white'
+},
+".slidesView": {
+	showPagingControl: 'true',
+	width: '65%',
+	height: '100%',
+	right: '5%',
+	bottom: 0,
+	color:'white'
+},
+".topicLabel": {
+	top: '25',
+	left: '25',
+	font: {fontSize: 30},
+	color: 'white'
+},
+".topicLabel[platform=ios formFactor=handheld]": {
+	top: '0',
+	left: '25',
+	font: {fontSize: 15},
+	color: 'white'
+},
+".subtopicView": {
+	layout: 'vertical'
+},
+".subtopicLabel": {
+	top: '20',
+	left: '35',
+	font: {fontSize: 15},
+	color: 'white'
+},
+".subtopicLabel[platform=ios formFactor=handheld]": {
+	top: '0',
+	left: '35',
+	font: {fontSize: 8},
+	color: 'white'
+},
+".video": {
+    top : 2,
+    autoplay : true,
+    backgroundColor : 'white',
+    height : 360,
+    width : 640,
+    mediaControlStyle : Titanium.Media.VIDEO_CONTROL_DEFAULT,
+    scalingMode : Titanium.Media.VIDEO_SCALING_ASPECT_FIT
+    // ,url: '/temp/MillerInsight.mp4'
+},
+".video[platform=ios formFactor=handheld]": {
+    top : 2,
+    autoplay : true,
+    backgroundColor : 'white',
+    height : 100,
+    width : 100,
+    mediaControlStyle : Titanium.Media.VIDEO_CONTROL_DEFAULT,
+    scalingMode : Titanium.Media.VIDEO_SCALING_ASPECT_FIT
+    // ,url: '/temp/MillerInsight.mp4'
+},
+".slide":{
+	borderWidth: 1,
+	borderColor: 'grey',
+	top: 25,
+	left: 25
+},
+".pdf": {
+	top: '2',
+	//url: '/temp/SalesAppSamplePDF.pdf',
+	height : 360,
+    width : 640	
+},
+".word": {
+	top: '2',
+	// url: '/temp/SalesAppSampleWord.docx',
+	height : 360,
+    width : 640	
+}
